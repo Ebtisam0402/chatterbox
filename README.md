@@ -43,8 +43,13 @@ An assignment to explore sockets and multithreading. MAKE SURE TO COMMIT AND PUS
 1. MAKE SURE THE SERVER IS RUNNING.
 1. Validate your solution by re-running the client. Make sure to use localhost and the same port the server is on. You should be able to type in the client and see your message echoed back to you after hitting enter.
 1. Try connecting multiple clients! You'll need to use different usernames/passwords from sample_users.txt
-1. Make sure you've committed and pushed.
+1. Make sure you've committed and pushed!
 
 ## Wave 8: Connecting over the internet
-1. You will be emailed a set of usernames and passwords to use for connecting to our live class server. DO NOT SHARE THESE PASSWORDS WITH ANYONE AND DO NOT COMMIT THEM TO YOUR REPOSITORY.
+1. Soon you will be emailed an IP address, port, and a set of usernames and passwords to use for connecting to our live class server. DO NOT SHARE THESE ADDRESSES/PORTS/PASSWORDS WITH ANYONE AND DO NOT COMMIT THEM TO YOUR REPOSITORY. You can place them in my_passwords.txt for easy access. That file is in the .gitignore, so it should not get committed
+1. Attempt connecting your client! Make sure to use the actual IP address, NOT localhost.
+1. The server should have the same basic behavior, try chatting with your classmates and making sure everything works! I may put a few extra anti-spam measures on the server. DO NOT ATTACK THE MAIN CLASS SERVER. I will provide a separate server for you to try to attack.
+
+## Wave 9: (Optional) Attack
+1. You will be emailed a separate server and set of usernames / passwords that you are allowed to attack. If you are able to take it down, you will recieve extra credit. You are allowed to use AI to help you with your attack, but ONLY AFTER YOU HAVE ALREADY MADE A PR for your project. Do any attack commits for a malicious client in a separate branch.
 
