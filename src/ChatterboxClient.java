@@ -188,8 +188,8 @@ public class ChatterboxClient {
     public void connect() throws IOException {
 
              // hint: get the streams from the sockets, use those to create the InputStreamReader/OutputStreamWriter and the BufferedReader/BufferedWriter
-
-            try (Socket socket = new Socket(host, port)){
+        // try with resource and 
+            Socket socket = new Socket(host, port);
             InputStream inputStream = socket.getInputStream();
             InputStreamReader inputStreamReader = new InputStreamReader(inputStream, java.nio.charset.StandardCharsets.UTF_8);
             BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
@@ -202,7 +202,7 @@ public class ChatterboxClient {
             this.serverReader = bufferedReader;
             this.serverWriter = bufferedWriter;
 
-        }   
+          
      
        
     }
