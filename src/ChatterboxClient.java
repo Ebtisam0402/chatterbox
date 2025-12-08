@@ -237,9 +237,14 @@ public class ChatterboxClient {
         serverWriter.flush();
 
          String authoResponse = serverReader.readLine();
-        System.out.println(authoResponse);
+        //System.out.println(authoResponse);
 
-       
+         //    if authoResponse starts with "Welcome", then all good, else throw error
+         if(authoResponse.startsWith("welcome")){
+            System.out.println(authoResponse);
+         }else{
+            throw new IllegalArgumentException(authoResponse);
+         }
        
         // Hint: use the username/password instance variables, DO NOT READ FROM userInput
         // send messages using serverWriter (don't forget to flush!)
